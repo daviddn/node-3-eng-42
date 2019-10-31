@@ -10,7 +10,11 @@ name 'node_3'
 default_source :supermarket
 
 # run_list: chef-client will run these recipes in the order specified.
+# run_list 'nodejs::default'
 run_list 'node_3::default'
+
 
 # Specify a custom source for a single cookbook:
 cookbook 'node_3', path: '.'
+# cookbook 'apt'
+# cookbook 'nodejs', '~> 6.0.0', :supermarket
